@@ -12,6 +12,5 @@ func main() {
 		return c.String(http.StatusOK, "Hello world")
 	})
 
-	e.GET("api/:id", getCarData)
 	e.Logger.Fatal(e.Start(":8080"))
 }
